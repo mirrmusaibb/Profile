@@ -1,8 +1,17 @@
 export type Project = {
-  id: string;
+  slug: string;
   title: string;
+  tagline: string;
   description: string;
-  url: string;
-  year: number;
+  year: string;
   category: string;
+  techStack: string[];
+  links: {
+    github?: string;
+    demo?: string;
+  };
+  gallery?: {
+    src: string;
+    alt: string;
+  }[];
 };

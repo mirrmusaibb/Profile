@@ -7,8 +7,7 @@ export default function HomePage() {
   return (
     <main>
       <TimelineProgress />
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 pt-6">
-        <p className="text-sm font-medium tracking-tight">Profile</p>
+      <header className="mx-auto flex max-w-6xl items-center justify-end px-6 pt-6">
         <ThemeToggle />
       </header>
       <Hero />
