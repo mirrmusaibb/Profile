@@ -11,7 +11,6 @@ A production-ready mega repository website built with Next.js App Router, TypeSc
 - Theme toggle (dark default, optional light)
 - Scroll progress indicator
 - SEO metadata, favicon, and custom 404 page
-- Fully static export support for GitHub Pages
 
 ## Tech Stack
 
@@ -36,36 +35,21 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-## Build for Production
+## Production Build
 
 ```bash
 npm run build
+npm run start
 ```
 
-## Static Export for GitHub Pages
+## Deployment (Vercel)
 
-```bash
-npm run build:pages
-```
-
-This generates static files in `out/`.
-
-## Deploy to GitHub Pages (manual)
-
-```bash
-npm run deploy
-```
-
-This builds the static export, creates `.nojekyll`, and publishes `out/` to the `gh-pages` branch.
-
-## Automatic GitHub Pages Deployment
-
-Pushing to `main` triggers `.github/workflows/deploy-pages.yml` to:
-
-1. Install dependencies
-2. Build static export with repository-aware base path
-3. Add `.nojekyll`
-4. Publish `out/` to `gh-pages`
+1. Push this repository to GitHub.
+2. Import the repository in Vercel.
+3. Keep default build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `.next`
+4. Deploy.
 
 ## Content Management
 
