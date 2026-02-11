@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://example.github.io/Profile'),
+  metadataBase: new URL('https://example.com'),
   title: {
     default: 'Project Atlas',
     template: '%s · Project Atlas'

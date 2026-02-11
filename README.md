@@ -35,25 +35,21 @@ npm run dev
 
 Open `http://localhost:3000`.
 
-## Static Build
+## Production Build
 
 ```bash
-npm run build:pages
+npm run build
+npm run start
 ```
 
-## Deployment (GitHub Pages)
+## Deployment (Vercel)
 
-This project is configured for permanent GitHub Pages hosting via static export.
-
-### Automatic deploy
-
-Push to `main` and GitHub Actions publishes `out/` to `gh-pages`.
-
-### Manual deploy
-
-```bash
-npm run deploy
-```
+1. Push this repository to GitHub.
+2. Import the repository in Vercel.
+3. Keep default build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `.next`
+4. Deploy.
 
 ## Content Management
 
