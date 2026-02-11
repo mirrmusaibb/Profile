@@ -5,15 +5,15 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mirrmusaibb.github.io/Profile'),
+  metadataBase: new URL('https://example.com'),
   title: {
-    default: 'Profile',
-    template: '%s · Profile'
+    default: 'Project Atlas',
+    template: '%s · Project Atlas'
   },
-  description: 'A record of deliberate work. Small builds. Precise thinking.',
+  description: 'A refined mega repository website showcasing products, platforms, and experiments.',
   openGraph: {
-    title: 'Profile',
-    description: 'A record of deliberate work. Small builds. Precise thinking.',
+    title: 'Project Atlas',
+    description: 'A calm and futuristic project ecosystem built with Next.js.',
     type: 'website'
   },
   icons: {
